@@ -1,5 +1,5 @@
 import Demo from '../../assets/fincal.png';
-
+import billTracker from '../../assets/billTracker.png';
 import typeTestImg from '../../assets/typetest.png';
 
 export const projectsData = [
@@ -20,6 +20,15 @@ export const projectsData = [
         githubLink: 'https://github.com/itsprathapkreddy/typingtest',
         liveLink: 'https://typingtestpro.vercel.app/',
         thumbNail: typeTestImg
+    },
+    {
+        show: true,
+        projectName: 'Bill Tracker',
+        briefSummary:
+            'A Credit Card Bill Tracker helps users track due dates, log payments, and receive reminders to avoid late fees. It provides spending insights and monitors outstanding balances for better financial management.',
+        githubLink: '#',
+        liveLink: 'https://credit-card-bill-tracker.com/',
+        thumbNail: billTracker
     },
     {
         show: false,

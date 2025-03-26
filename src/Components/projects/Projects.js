@@ -1,5 +1,4 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { SiGithub } from 'react-icons/si';
 import { HiExternalLink } from 'react-icons/hi';
 import '../../App.css';
 import { Slide, Zoom } from 'react-reveal';
@@ -9,11 +8,11 @@ const Projects = () => {
     return (
         <Container className="projCont scrollItem">
             <Zoom top>
-                <div className="separator">
+                <div className="separator py-3">
                     <h2 className="projContHead">Projects</h2>
                 </div>
             </Zoom>
-            
+
             {projectsData.map((item, index) => (
                 <Container>
                     {item.show && (
@@ -26,23 +25,6 @@ const Projects = () => {
                                     <h2 style={{ padding: '10px', marginBottom: '20px' }}>{item.projectName}</h2>
                                     <h5>{item.briefSummary}</h5>
                                     <Row style={{ padding: '20px 0px' }}>
-                                        <Col xs={6}>
-                                            <Button variant="primary" className="projBtn">
-                                                <a
-                                                    href={item.githubLink}
-                                                    target="_blank"
-                                                    style={{
-                                                        color: 'inherit',
-                                                        textDecoration: 'none',
-                                                        display: 'grid',
-                                                        gridTemplateColumns: '0.5fr 1fr'
-                                                    }}
-                                                >
-                                                    <SiGithub style={{ fontSize: '24px' }} />
-                                                    <div style={{ textAlign: 'left' }}>Github</div>
-                                                </a>
-                                            </Button>
-                                        </Col>
                                         <Col xs={6}>
                                             <Button variant="success" className="projBtn">
                                                 <a
